@@ -1,0 +1,108 @@
+BasedOnStyle: LLVM
+Language: Cpp
+
+# indentation / line width
+IndentWidth: 4
+TabWidth: 4
+UseTab: Always
+ColumnLimit: 100
+ContinuationIndentWidth: 4
+ConstructorInitializerIndentWidth: 4
+PPIndentWidth: -1
+
+BreakBeforeBraces: Attach
+InsertBraces: true
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: true
+
+PointerAlignment: Right
+ReferenceAlignment: Right
+DerivePointerAlignment: false
+
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCompound: false
+  AlignFunctionDeclarations: true
+  AlignFunctionPointers: false
+  PadOperators: false
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCompound: false
+  PadOperators: false
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: false
+  PadOperators: true
+AlignConsecutiveBitFields:
+  Enabled: false
+BitFieldColonSpacing: Both
+
+# other alignment
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+AlignEscapedNewlines: Right
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 0
+
+IncludeBlocks: Preserve
+SortIncludes: CaseSensitive
+IncludeCategories:
+  - Regex: '.*'
+    Priority: 1
+
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpacesInParens: Never
+SpacesInAngles: Never
+SpacesInSquareBrackets: false
+SpacesInContainerLiterals: true
+SpacesBeforeTrailingComments: 1
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: -1
+
+BinPackArguments: true
+BinPackParameters: true
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+BreakBeforeBinaryOperators: None
+BreakBeforeTernaryOperators: true
+BreakStringLiterals: true
+AlwaysBreakBeforeMultilineStrings: false
+BreakBinaryOperations: Never
+ReflowComments: Always
+
+IndentCaseLabels: false
+IndentCaseBlocks: false
+IndentGotoLabels: true
+IndentPPDirectives: None
+
+LineEnding: LF
+DeriveLineEnding: false
+MaxEmptyLinesToKeep: 1
+KeepEmptyLines:
+  AtStartOfBlock: true
+  AtStartOfFile: true
+  AtEndOfFile: false
+RemoveSemicolon: false
+InsertTrailingCommas: None
+EnumTrailingComma: Leave
+CompactNamespaces: false
+FixNamespaceComments: true
